@@ -1,0 +1,20 @@
+intre <> ( la generics) pot pune doar obiecte, nu si primitive pt ca generic in java functioneaza
+doar cu referinte la obiecte
+ex valid:
+    List<String> list;
+    List<Integer> numbers;
+    Set<Dog> dogs;
+    Map<String, Integer> map;
+ex invalid:
+    List<int> list;     ❌
+    Set<double> s;      ❌
+    Map<int, String> m; ❌
+
+Lista
+    -ArrayList=lista dinamica
+        ->list=cuvant cheie pt array dinamic
+        ->cand inserezi un element la mijloc, elementele din dreapta se deplaseaza in memorie, indecsii de sschimba pt toate elem din dreapta
+        ->parcurgere mai rapida
+    -LinkedList = colectie formata din noduri legate intre ele
+        -> fiecare nod contine: vaoare, referinta catre nod urmator, referinta catre nod anterior
+        -> cand adaugi un element, creezi un nod nou si actualizezi legaturile vecinilor (se modifica doar referintele nodurilor vecine)
