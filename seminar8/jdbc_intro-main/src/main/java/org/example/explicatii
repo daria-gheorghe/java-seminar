@@ -1,0 +1,14 @@
+JDBC = Java Database Connectivity
+-> API din JDK pentru comunicare cu baze de date
+-> un set de clase și interfețe
+-> îți permite să vorbești cu o bază de date din cod Java
+-> ava trimite comenzi SQL către baza de date și primește rezultate înapoi
+-> e "puntea" dintre Java și orice bază de date (MySQL, PostgreSQL, H2, Oracle, etc.)
+-> scrii mereu același cod JDBC, indiferent de baza de date
+
+H2 = baza de date scrisa in Java
+-> poate rula in-memory — adică nu salvează nimic pe disc, totul există doar în RAM cât timp rulează programul
+
+Maven = un tool de build și management al dependențelor
+-> pom.xml e fișierul de configurare al Maven — Project Object Model. Acolo declari: ce dependențe ai, ce versiune de Java folosești, cum se numește proiectul, etc.
+-> și Maven descarcă automat acea librărie(driver) de pe internet (de pe Maven Central Repository) și o pune la dispoziția proiectului
