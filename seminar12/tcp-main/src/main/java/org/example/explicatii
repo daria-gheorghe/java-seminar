@@ -1,0 +1,14 @@
+Din SimpleTcpClient și SimpleTcpServer vedeai că TCP:
+-Face new Socket() → stabilește conexiune înainte să trimită ceva
+-Are accept() → așteaptă clientul
+-Garantează că mesajul ajunge ("Server received: " + message)
+
+Deci TCP = connection-oriented, garantează livrarea, mai lent
+
+
+UDP nu apare în cod, dar prin contrast știi că:
+-Nu face new Socket() cu conexiune
+-Nu are accept()
+-Nu confirmă că mesajul a ajuns
+
+Deci = mai rapid, fără garanții
